@@ -14,18 +14,20 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #ecf0f3;
+    background: #f1f3f6;
 }
 
 .editor-container {
     width: 80%;
     max-width: 1200px;
     padding: 25px;
-    background-color: #fff;
     border-radius: 10px;
-    background: #ecf0f3;
-    box-shadow: -3px -3px 7px #ffffff,
-                3px 3px 5px #ceced1;
+    background: #f1f3f1;
+    box-shadow: inset 0 0 15px rgba(55, 84, 170,0),
+                inset 0 0 20px rgba(255, 255, 255,0),
+                7px 7px 15px rgba(55, 84, 170,.15),
+                -7px -7px 20px rgba(255, 255, 255,1),
+                inset 0px 0px 4px rgba(255, 255, 255,.2);
 }
 
 .editor {
@@ -50,12 +52,11 @@ button {
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    color: #ff8e23;
+    color: white;
     font-size: 13px;
     font-weight: 600;
-    background: #ecf0f3;
-    box-shadow: -3px -3px 7px #ffffff,
-               3px 3px 5px #ceced1;
+    background: #9dabc0;
+    box-shadow: 0px 2px 5px rgba(55, 84, 170,.25);
 }
 
 .text-area {
@@ -70,13 +71,17 @@ button {
     height: 100%;
     max-width: 400px;
     max-height: 400px;
-    box-shadow: -3px -3px 7px #ffffff,
-               3px 3px 5px #ceced1;
+    box-shadow: inset 0 0 15px rgba(55, 84, 170,0),
+                inset 0 0 20px rgba(255, 255, 255,0),
+                7px 7px 15px rgba(55, 84, 170,.15),
+                -7px -7px 20px rgba(255, 255, 255,1),
+                inset 0px 0px 4px rgba(255, 255, 255,.2);
     outline: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #ff8e23;
+    text-align: center;
+    color: #9dabc0;
     overflow: auto;
 }
 
@@ -101,17 +106,24 @@ button {
     width: 100%;
     height: 40px;
     border: none;
-    background: #ecf0f3;
-    box-shadow: -3px -3px 7px #ffffff,
-               3px 3px 5px #ceced1;
-    color: #ff8e23;
+    outline: none;
+    background: #f1f3f1;
+    box-shadow: inset 0 0 15px rgba(55, 84, 170,0),
+                inset 0 0 20px rgba(255, 255, 255,0),
+                7px 7px 15px rgba(55, 84, 170,.15),
+                -7px -7px 20px rgba(255, 255, 255,1),
+                inset 0px 0px 4px rgba(255, 255, 255,.2);
+    color: #9dabc0;
     font-weight: 600;
 }
 
 .input-row input {
-    background: #ecf0f3;
-    box-shadow: -3px -3px 7px #ffffff,
-               3px 3px 5px #ceced1;
+    background: #f1f3f1;
+    box-shadow: inset 0 0 15px rgba(55, 84, 170,0),
+                inset 0 0 20px rgba(255, 255, 255,0),
+                7px 7px 15px rgba(55, 84, 170,.15),
+                -7px -7px 20px rgba(255, 255, 255,1),
+                inset 0px 0px 4px rgba(255, 255, 255,.2);
     border: none;
     outline: none;
 }
@@ -136,7 +148,7 @@ button {
     outline: none;
 }
 
-input:focus {
+input:focus, select:focus {
     box-shadow: inset -3px -3px 7px #ffffff,
                inset 3px 3px 5px #ceced1;
 }
@@ -153,8 +165,8 @@ input::placeholder {
 }
 
 button:active {
-    box-shadow: inset -3px -3px 7px #ffffff,
-               inset 3px 3px 5px #ceced1;
+    box-shadow: inset -1px -1px 3px #ffffff,
+               inset 1px 1px 3px #ceced1;
 }
 
 #last-row {
@@ -204,9 +216,9 @@ button:active {
 }
      
 ::-webkit-scrollbar-thumb {
-    background: #ff8e23ab;
+    background: #9dabc0;
 }
      
 ::-webkit-scrollbar-thumb:hover {
-    background: #ff8e23;
+    background: #9dabc0;
 }
